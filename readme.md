@@ -13,9 +13,10 @@ This work skin was created with screen readers in mind. If you have any suggesti
 - Reply and like buttons are skipped. Since they don't *do* anything, I don't feel they add value. This is done through the attribute `aria-hidden` (`aria-hidden="true"`). The amount of likes will still read out, if you've set it
 
 ## Using with another work skin
-If you choose to use this to render comments for your existing Instagram post and it's work skin, you can update this rule 
+If you choose to use this to render comments in your fic for your existing Instagram post, you can also just drop this code below it. The style selectors are pretty strict so they shouldn't overlap. If you need to fiddle with the width of your comments, update the max-width in this rule to your desired width
 
 ```
+/* The comment container */
 .instCommentContainer {
     max-width: 335px;
     margin: 0 auto;
@@ -23,13 +24,3 @@ If you choose to use this to render comments for your existing Instagram post an
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 ```
-
-to this:
-
-```
-.instCommentContainer {
-    width: 100%;
-    max-width: 100%
-}
-```
-and it should take up all available space but not overflow past the width of the content. I've only tested this with one, so no guarentees! You can also just drop this code below it. The style selectors are pretty strict so they shouldn't overlap.
