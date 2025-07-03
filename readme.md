@@ -1,6 +1,8 @@
 ## Instagram Comment Work Skin
 Adds Instagram comments to your fic
 
+<img width="395" alt="image" src="https://github.com/user-attachments/assets/8a4307ca-67ad-4ce8-8b7b-4f29b3e96870" />
+
 ## Structure of this repo
 I wanted this to be super user friendly, but also match Instagram as much as possible, so the templates are a little complex. There is an example file and templates with placeholders, if that's easier for you. If you have any issues, you can email (see github bio) or leave a comment on the posted tutorial on AO3
 
