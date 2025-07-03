@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex
+            sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis
+            convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus
+            fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada
+            lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti
+            sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex
+            sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis
+            convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus
+            fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada
+            lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti
+            sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+        <div class="instCommentContainer">
+            <!-- This is a single comment. Copy and paste as many as you want inside instCommentContainer -->
+            <div class="instSingleCommentWrapper">
+                <div class="instSingleComment">
+                    <!-- 
+                        Replace "src" with you image link.
+                        Replace "alt" with "character name's profile picture" (ex. Crowley's profile picture) for screen readers :D
+                        Instagram would actually have "serpent666's profile picture as the alt"
+                        idk if that's confusing for readers to have to keep track of who the usernames belong too unless they're not supposed to know yet
+                    -->
+                    <img
+                        class="instCommentAvatar"
+                        src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg"
+                        alt="character's profile picture"
+                        height="30"
+                        width="30"
+                    />
+                    <!-- The meat and potatoes. Everything except the picture and like button is in here -->
+                    <div class="instCommentContent">
+                        <div class="instCommentMeta">
+                            
+                            <!-- Replace with username -->
+                            <p>
+                                <span class="instCommentUser">serpent.666</span>
+                                <!-- Don't remove this -  -->
+                                <span>&nbsp;</span>
+                                <!-- Days. You can update this (ex. 3d, 1d, 12hr) -->
+                                <span class="instCommentDetails">4d</span>
+                            </p>
+                        </div>
+                        <!--
+                                The comment itself. You can update text and/or mention name or get rid of blue mention name
+                                See example below of comment without mention. just erase the span with class instCommentMention
+                                instCommentMention gives blue color
+                            -->
+                        <p>
+                            <span class="instCommentMention">@easternAngel</span>
+                            answer your phone. this is a longer comment
+                        </p>
+                        <!-- The reply button. Don't change -->
+                        <p class="instCommentReplyText">
+                            <!-- But you can change how many likes! -->
+                            <span class="instCommentLikeCount">1 like</span>
+                            Reply
+                        </p>
+                    </div>
+                    <!-- 
+                            The like button. This one is unfilled button
+                            Copy/paste the whole thing to replace - <svg> and it's <path> element
+                            Screen reader will say: "image like button"
+                        -->
+                    <svg
+                        class="instCommentLike"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="img"
+                        aria-label="Like button"
+                    >
+                        <path
+                            d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.03L12 21.35Z"
+                            stroke="#808080"
+                            stroke-width="2"
+                        />
+                    </svg>
+                </div>
+                <!-- 
+                        If your comment has replies but is collapsed, it'll look like this
+                        NOTE: View all 1 replies is how instagram displays for 1 so I kept it like that, it feels weird
+                    -->
+                <div class="instCommentReplyToggle instCommentReplyText">
+                    <div class="instCommentReplyToggleSpacer"></div>
+                    <p>View all 1 replies</p>
+                </div>
+            </div>
+            <!-- End single comment -->
+            <!-- Start of next comment. Copy/pasted of the above and tweaked a bit -->
+            <div class="instSingleCommentWrapper">
+                <div class="instSingleComment">
+                    <!-- 
+                            Replace "src" with you image link.
+                            Replace "alt" with "character name's profile picture" (ex. Crowley's profile picture) for screen readers :D
+                            Instagram would actually have "serpent666's profile picture as the alt"
+                            idk if that's confusing for readers to have to keep track of who the usernames belong too unless they're not supposed to know yet
+                        -->
+                    <img
+                        class="instCommentAvatar"
+                        src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg"
+                        alt="character's profile picture"
+                        height="30"
+                        width="30"
+                    />
+                    <div class="instCommentContent">
+                        <div class="instCommentMeta">
+                            <p>
+                                <!-- Replace with username -->
+                                <span class="instCommentUser">easternAngel</span>
+                                <!-- Don't remove this -  -->
+                                <span>&nbsp;</span>
+                                <!-- Days since comment. You can update this (ex. 3d, 1d, 12hr) -->
+                                <span class="instCommentDetails">1d</span>
+                            </p>
+                        </div>
+                        <!--
+                                The comment itself. You can update text
+                                This one doesn't have a mention in it
+                            -->
+                        <p>You're being silly</p>
+                        <!-- The reply button. Don't change -->
+                        <p class="instCommentReplyText">
+                            <!-- But you can change how many likes! -->
+                            <span class="instCommentLikeCount">4 likes</span>
+                            Reply
+                        </p>
+                    </div>
+                    <!-- 
+                            The like button. This one is a filled button so the user has liked it
+                            Copy/paste the whole thing to replace - <svg> and it's <path> element
+                            Screen reader will say: "image filled like button"
+                        -->
+                    <svg
+                        class="instCommentLike"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="img"
+                        aria-label="Filled like button"
+                    >
+                        <path
+                            d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.03L12 21.35Z"
+                            fill="#808080"
+                            stroke="#808080"
+                            stroke-width="2"
+                        />
+                    </svg>
+                </div>
+                <!-- A comment with replies being shown. It's the same thing as the show toggle, just change the text -->
+                <div class="instCommentReplyToggle instCommentReplyText">
+                    <div class="instCommentReplyToggleSpacer"></div>
+                    <p>Hide all replies</p>
+                </div>
+                <!-- Replies go here. Copy and paste them. They're very similar to comments, just without the hide/view all replies button -->
+                 <!-- Make sure that your reply outer wrapper has both instSingleCommentWrapper and instCommentReply classes -->
+                <div class="instSingleCommentWrapper instCommentReply">
+                    <div class="instSingleComment">
+                        <!-- 
+                                Replace "src" with you image link.
+                                Replace "alt" with "character name's profile picture" (ex. Crowley's profile picture) for screen readers :D
+                                Instagram would actually have "serpent666's profile picture as the alt"
+                                idk if that's confusing for readers to have to keep track of who the usernames belong too unless they're not supposed to know yet
+                            -->
+                        <img
+                            class="instCommentAvatar"
+                            src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg"
+                            alt="character's profile picture"
+                            height="30"
+                            width="30"
+                        />
+                        <div class="instCommentContent">
+                            <div class="instCommentMeta">
+                                <p>
+                                    <!-- Replace with username -->
+                                    <span class="instCommentUser">serpent.666</span>
+                                    <!-- Don't remove this -  -->
+                                    <span>&nbsp;</span>
+                                    <!-- Days since comment. You can update this (ex. 3d, 1d, 12hr) -->
+                                    <span class="instCommentDetails">1d</span>
+                                </p>
+                            </div>
+                            <!-- The comment itself. You can update text -->
+                             <!-- Note the space between the instCommentMention and the text after it! -->
+                            <p><span class="instCommentMention">@easternAngel</span> pls don't do magic</p>
+                            <!-- The reply button. Don't change -->
+                            <p class="instCommentReplyText">Reply</p>
+                        </div>
+                        <!-- 
+                                The like button. This one is a filled button so the user has liked it
+                                Copy/paste the whole thing to replace - <svg> and it's <path> element
+                                Screen reader will say: "image filled like button"
+                            -->
+                            <svg
+                            class="instCommentLike"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-label="Like button"
+                        >
+                            <path
+                                d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.03L12 21.35Z"
+                                stroke="#808080"
+                                stroke-width="2"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <!-- Another reply -->
+                <div class="instSingleCommentWrapper instCommentReply">
+                    <div class="instSingleComment">
+                        <!-- 
+                                Replace "src" with you image link.
+                                Replace "alt" with "character name's profile picture" (ex. Crowley's profile picture) for screen readers :D
+                                Instagram would actually have "serpent666's profile picture as the alt"
+                                idk if that's confusing for readers to have to keep track of who the usernames belong too unless they're not supposed to know yet
+                            -->
+                        <img
+                            class="instCommentAvatar"
+                            src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg"
+                            alt="character's profile picture"
+                            height="30"
+                            width="30"
+                        />
+                        <div class="instCommentContent">
+                            <div class="instCommentMeta">
+                                <p>
+                                    <!-- Replace with username -->
+                                    <span class="instCommentUser">serpent.666</span>
+                                    <!-- Don't remove this -  -->
+                                    <span>&nbsp;</span>
+                                    <!-- Days since comment. You can update this (ex. 3d, 1d, 12hr) -->
+                                    <span class="instCommentDetails">1d</span>
+                                </p>
+                            </div>
+                            <!-- The comment itself. You can update text -->
+                             <!-- Note the space between the instCommentMention and the text after it! -->
+                            <p><span class="instCommentMention">@easternAngel</span> its demeaning</p>
+                            <!-- The reply button. Don't change -->
+                            <p class="instCommentReplyText">Reply</p>
+                        </div>
+                        <!-- 
+                                The like button. This one is a filled button so the user has liked it
+                                Copy/paste the whole thing to replace - <svg> and it's <path> element
+                                Screen reader will say: "image filled like button"
+                            -->
+                            <svg
+                            class="instCommentLike"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-label="Like button"
+                        >
+                            <path
+                                d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.03L12 21.35Z"
+                                stroke="#808080"
+                                stroke-width="2"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- End comment -->
+            <!-- Start of next comment. This comment has no replies -->
+            <div class="instSingleCommentWrapper">
+                <div class="instSingleComment">
+                    <!-- 
+                            Replace "src" with you image link.
+                            Replace "alt" with "character name's profile picture" (ex. Crowley's profile picture) for screen readers :D
+                            Instagram would actually have "serpent666's profile picture as the alt"
+                            idk if that's confusing for readers to have to keep track of who the usernames belong too unless they're not supposed to know yet
+                        -->
+                    <img
+                        class="instCommentAvatar"
+                        src="https://www.dropbox.com/scl/fi/6kivx80etsvhs6zxl2ee2/mrs-sandwich.jpeg?rlkey=kzby60fzhixdpsbft7zzv5649&st=aqh2kbxn&raw=1"
+                        alt="Mrs Sandwich's profile picture"
+                        height="30"
+                        width="30"
+                    />
+                    <div class="instCommentContent">
+                        <div class="instCommentMeta">
+                            <p>
+                                <!-- Replace with username -->
+                                <span class="instCommentUser">TheMadHatpinner</span>
+                                <!-- Don't remove this -  -->
+                                <span>&nbsp;</span>
+                                <!-- Days since comment. You can update this (ex. 3d, 1d, 12hr) -->
+                                <span class="instCommentDetails">11hr</span>
+                            </p>
+                        </div>
+                        <!-- his comment uses an emoji. You just copy and paste any emoji you want -->
+                        <p>the girls miss you. come see us soon! ❤️</p>
+                        <!-- The reply button. This comment has no likes -->
+                        <p class="instCommentReplyText">Reply</p>
+                    </div>
+                    <!-- 
+                            The like button. This one is unfilled button
+                            Copy/paste the whole thing to replace - <svg> and it's <path> element
+                            Screen reader will say: "image like button"
+                        -->
+                    <svg
+                        class="instCommentLike"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="img"
+                        aria-label="Like button"
+                    >
+                        <path
+                            d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.03L12 21.35Z"
+                            stroke="#808080"
+                            stroke-width="2"
+                        />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <p></p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex
+            sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis
+            convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus
+            fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada
+            lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti
+            sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex
+            sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis
+            convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus
+            fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada
+            lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti
+            sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+    </body>
+</html>

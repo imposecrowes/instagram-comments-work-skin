@@ -1,0 +1,117 @@
+/* This removes the <br /> AO3 inserts before pictures */
+.instSingleComment br {
+    display: none;
+}
+
+/* Resets AO3's paragraph margin */
+.instCommentContainer p {
+    margin: 0;
+}
+
+/* The comment container. Takes up all available space from parent */
+.instCommentContainer {
+    max-width: 335px;
+    margin: 0 auto;
+    width: fit-content;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.instCommentContainer .instSingleCommentWrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 12px;
+    max-width: 100%;
+}
+
+/* This keeps the hearts all aligned to the right */
+.instSingleCommentWrapper .instCommentReply {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+.instSingleComment {
+    min-height: 45px;
+    display: flex;
+}
+
+/* The avatar. You can change width and height to resize, just keep them the same as the other for a circle */
+.instSingleCommentWrapper .instCommentAvatar {
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    float: left;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: #dddddd;
+    border-radius: 50%;
+}
+
+/* The content. This is name, comment, likes, and reply button */
+.instSingleCommentWrapper .instCommentContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: auto;
+}
+
+/* The meta info about the comment. Name and days since */
+.instSingleCommentWrapper .instCommentMeta {
+    display: flex;
+    align-items: baseline;
+}
+
+/* The user name */
+.instCommentMeta .instCommentUser {
+    color: #343436;
+    font-weight: bold;
+}
+
+/* The days since in a lighter weight font */
+.instCommentMeta .instCommentDetails {
+    color: rgb(115, 115, 115);
+    font-weight: 400;
+}
+
+/* Blue text for a mention */
+.instCommentContent .instCommentMention {
+    color: rgb(65, 80, 247);
+}
+
+/* The like button */
+.instSingleCommentWrapper .instCommentLike {
+    height: 16px;
+    width: 16px;
+    margin: auto 0;
+    flex-shrink: 0;
+    margin-left: 8px;
+}
+
+/* The reply button. It's a little smaller */
+.instSingleCommentWrapper .instCommentReplyText {
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* The like count. Has some space on the right */
+.instSingleCommentWrapper .instCommentLikeCount {
+    margin-right: 12px;
+}
+
+.instSingleCommentWrapper .instCommentReplyToggle {
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 40px;
+}
+
+.instSingleCommentWrapper .instCommentReplyToggleSpacer {
+    width: 22px;
+    margin-right: 12px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(219, 219, 219);
+    border-bottom-style: solid;
+}
