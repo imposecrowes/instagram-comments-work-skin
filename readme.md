@@ -7,7 +7,9 @@ Adds Instagram comments to your fic
 I wanted this to be super user friendly, but also match Instagram as much as possible, so the templates are a little complex. There is an example file and templates with placeholders, if that's easier for you. If you have any issues, you can email (see github bio) or leave a comment on the posted tutorial on AO3
 - `styles.css` - This is your styles. Copy this entire file and paste it into your work skin
 - `index.htnl` - This is a real example with lots of comments
-- `singleCommentTemplate` - This is a template of a single comment
+- `singleComment.html` - This is a template of a single comment
+- `commentAndReples.html` - This is a tempalte of a comment with replies
+- `singleReply.html` - This is a templatae of a single reply
 
 ## Accessibility
 This work skin was created with screen readers in mind. If you have any suggestions or something reads wonky, please don't hesitate to share them - I'd love to learn how I can make the work skin better!
