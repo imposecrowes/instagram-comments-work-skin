@@ -1,22 +1,22 @@
 /* This removes the <br /> AO3 inserts before pictures */
-.instSingleComment br {
+#instCommentContainer br {
     display: none;
 }
 
 /* Resets AO3's paragraph margin */
-.instCommentContainer p {
+#instCommentContainer p {
     margin: 0;
 }
 
-/* The comment container. Takes up all available space from parent */
-.instCommentContainer {
+/* The comment container */
+#instCommentContainer {
     max-width: 335px;
     margin: 0 auto;
     width: fit-content;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.instCommentContainer .instSingleCommentWrapper {
+#instCommentContainer .instSingleCommentWrapper {
     display: flex;
     flex-direction: column;
     font-size: 14px;
@@ -25,22 +25,21 @@
 }
 
 /* This keeps the hearts all aligned to the right */
-.instSingleCommentWrapper .instCommentReply {
+#instCommentContainer .instCommentReply {
     padding-right: 0;
     padding-left: 40px;
 }
 
-.instSingleComment {
+#instCommentContainer .instSingleComment {
     min-height: 45px;
     display: flex;
 }
 
 /* The avatar. You can change width and height to resize, just keep them the same as the other for a circle */
-.instSingleCommentWrapper .instCommentAvatar {
+#instCommentContainer .instCommentAvatar {
     margin-right: 8px;
     width: 30px;
     height: 30px;
-    float: left;
     border-style: solid;
     border-width: 0.1em;
     border-color: #dddddd;
@@ -48,38 +47,37 @@
 }
 
 /* The content. This is name, comment, likes, and reply button */
-.instSingleCommentWrapper .instCommentContent {
+#instCommentContainer .instCommentContent {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin-right: auto;
 }
 
 /* The meta info about the comment. Name and days since */
-.instSingleCommentWrapper .instCommentMeta {
+#instCommentContainer .instCommentMeta {
     display: flex;
     align-items: baseline;
 }
 
 /* The user name */
-.instCommentMeta .instCommentUser {
+#instCommentContainer .instCommentUser {
     color: #343436;
     font-weight: bold;
 }
 
 /* The days since in a lighter weight font */
-.instCommentMeta .instCommentDetails {
+#instCommentContainer .instCommentDetails {
     color: rgb(115, 115, 115);
     font-weight: 400;
 }
 
 /* Blue text for a mention */
-.instCommentContent .instCommentMention {
+#instCommentContainer .instCommentMention {
     color: rgb(65, 80, 247);
 }
 
 /* The like button */
-.instSingleCommentWrapper .instCommentLike {
+#instCommentContainer .instCommentLike {
     height: 16px;
     width: 16px;
     margin: auto 0;
@@ -88,7 +86,7 @@
 }
 
 /* The reply button. It's a little smaller */
-.instSingleCommentWrapper .instCommentReplyText {
+#instCommentContainer .instCommentReplyText {
     font-size: 12px;
     color: rgb(115, 115, 115);
     font-weight: 600;
@@ -96,11 +94,11 @@
 }
 
 /* The like count. Has some space on the right */
-.instSingleCommentWrapper .instCommentLikeCount {
+#instCommentContainer .instCommentLikeCount {
     margin-right: 12px;
 }
 
-.instSingleCommentWrapper .instCommentReplyToggle {
+#instCommentContainer .instCommentReplyToggle {
     padding-top: 8px;
     display: flex;
     align-items: center;
@@ -108,7 +106,7 @@
     margin-left: 40px;
 }
 
-.instSingleCommentWrapper .instCommentReplyToggleSpacer {
+#instCommentContainer .instCommentReplyToggleSpacer {
     width: 22px;
     margin-right: 12px;
     border-bottom-width: 1px;

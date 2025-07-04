@@ -1,0 +1,86 @@
+<!-- This is a single comment. It has no likes or replies
+It's more of a template, so you can ctrl+f for an _ to make sure you're replacing Everything -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <!-- IMPORTANT: You must wrap everything with instCommentContainer - it sets font and some other important things! -->
+    <div id="instCommentContainer">
+        <!-- BEGIN SINGLE COMMENT -->
+        <div class="instSingleCommentWrapper">
+            <div class="instSingleComment">
+                <!-- 
+                        Replace "src" with you image link.
+                        Replace "alt" with "character name's profile picture" (ex. Crowley's profile picture) for screen readers
+                        Instagram would actually have "serpent666's profile picture as the alt"
+                        idk if that's confusing for readers to have to keep track of who the usernames belong too unless they're not supposed to know yet
+                    -->
+                <img
+                    class="instCommentAvatar"
+                    src="PROFILE_PICTURE_URL"
+                    alt="CHARACTER_NAME's profile picture"
+                    height="30"
+                    width="30"
+                />
+                <!-- The meat and potatoes. Everything except the picture and like button is in here -->
+                <div class="instCommentContent">
+                    <div class="instCommentMeta">
+                        <!-- Replace with username -->
+                        <p>
+                            <span class="instCommentUser">USERNAME_HERE</span>
+                            <!-- Don't remove this -  -->
+                            <span>&nbsp;</span>
+                            <!-- Days. You can update this (ex. 3d, 1d, 12hr) -->
+                            <span class="instCommentDetails">NUMBER_OF_DAYSd</span>
+                        </p>
+                    </div>
+                    <!--
+                    The comment itself. You can update text and mention name or get rid of blue mention name
+                    See example below of comment without mention. just erase the span with class instCommentMention
+                    instCommentMention gives blue color
+                -->
+                    <p>
+                        <span class="instCommentMention">@REPLY_USER</span>
+                        YOUR_COMMENT_HERE
+                    </p>
+                    <!-- The reply button. Don't change. Screen readers won't read out "reply" but they will read out how many likes -->
+                    <p class="instCommentReplyText">
+                        <!-- Remove the span with class instCommentLikeCount if you want the comment to be unliked -->
+                        <span class="instCommentLikeCount">NUMBER_OF_LIKES like</span>
+                        <span aria-hidden="true">Reply</span>
+                    </p>
+                </div>
+                <!-- 
+                The like button. This one is unfilled button
+                Copy/paste the whole thing to replace - <svg> and it's <path> element with the filled button
+                Screen reader will not read this out. I don't feel it adds value
+            -->
+                <svg
+                    class="instCommentLike"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.03L12 21.35Z"
+                        stroke="#808080"
+                        stroke-width="2"
+                    />
+                </svg>
+                <!-- End like button -->
+            </div>
+            <!-- If your comment has replies but is collapsed, it'll look like this -->
+            <div class="instCommentReplyToggle instCommentReplyText">
+                <div class="instCommentReplyToggleSpacer"></div>
+                <!-- Screen readers WILL read this out. Remove if you want no replies -->
+                <p>View all NUMBER_OF_REPLIES replies</p>
+            </div>
+        </div>
+        <!-- END SINGLE COMMENT -->
+    </div>
+</html>
