@@ -13,6 +13,7 @@ I wanted this to be super user friendly, but also match Instagram as much as pos
 -   `singleComment.html` - This is a template of a single comment
 -   `commentAndReples.html` - This is a tempalte of a comment with replies
 -   `singleReply.html` - This is a templatae of a single reply
+-    `likeButtons.html` - Just the like buttons for you to copy/paste
 
 ## Accessibility
 
