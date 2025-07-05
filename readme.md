@@ -2,7 +2,7 @@
 
 Adds Instagram comments to your fic
 
-<img width="395" alt="image" src="https://github.com/user-attachments/assets/8a4307ca-67ad-4ce8-8b7b-4f29b3e96870" />
+<img width="356" alt="image" src="https://github.com/user-attachments/assets/953e2cc7-ffe8-4c43-a0e0-8d3899fb1056" />
 
 ## Structure of this repo
 
