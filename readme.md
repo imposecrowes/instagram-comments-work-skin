@@ -82,9 +82,9 @@ This section breaks down the nested levels of your HTML elements, from the main 
         -   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── **`<div class="instSingleComment">`**
 
             -   This `div` contains the main content of **one individual comment**:
-                -   The user's **profile picture** (`<img class="instCommentAvatar">`)
+                -   The user's **profile picture** (`<img class="instCommentAvatar" />`)
                 -   The **comment content** (username, comment text, likes, reply button)
-                -   The **like heart/icon** (`<svg class="instCommentLike">`)
+                -   The **like heart/icon** (`<img class="instCommentLike" />`)
 
         -   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── **`<div class="instCommentReplyToggle instCommentReplyText">`** (Optional)
 
@@ -103,7 +103,7 @@ This section breaks down the nested levels of your HTML elements, from the main 
 
 Here's a breakdown of individual elements within a comment and what you can change:
 
-### A. The Comment Avatar (`<img class="instCommentAvatar">`)
+### A. The Comment Avatar (`<img class="instCommentAvatar" />`)
 
 -   Displays the user's profile picture.
 -   **What to change:**
@@ -165,18 +165,20 @@ Here's a breakdown of individual elements within a comment and what you can chan
         -   **Accessibility note:**
             -   I don't feel like reding this off adds value, so I told screen readers to skip it with the attribute `aria-hidden="true"`. If you want a screen reader to read the word Reply, remove that attribute
 
-### C. The Like Button (`<svg class="instCommentLike">...</svg>`)
+### C. The Like Button (`<img class="instCommentLike" />`)
 
 -   The heart icon next to each comment.
 -   **What to change:**
-    -   **Unfilled Heart:** To show an unfilled heart (not liked), use the SVG provided for the first comment in the main HTML. The `path` element should have `fill="none"` and `stroke="#808080"`.
-    -   **Filled Heart:** To show a filled heart (liked), use the SVG provided for the second comment. The `path` element should have `fill="#808080"` and `stroke="#808080"`.
+    -   You can copy and paste the filled and unfilled images. If you can't tell which is which, the file likeButtons.html just contains two images you an choose from to replace
 -   **What not to change:**
     -   `class="instCommentLike"`
-    -   `width`, `height`, `viewBox`, `fill="none"`, `xmlns`, `role`, `aria-hidden="true"` on the main `<svg>` tag.
-    -   The `d` attribute of the `<path>` element (this defines the shape of the heart).
+    -   `width`, `height`, `aria-hidden="true"`, `alt` on the `<img>` tag.
 -   **Accessibility note:**
     -   The rule of thumb with announcing images is if they add value. I don't feel this adds value, so I instructed screen readers to skip it with the attribute `aria-hidden="true"`. If you want a screen reader to read it off, swap that with `aria-label="Unfilled/filled like button"` but I don't feel it's necessary since the number of likes is read out at the end of the comment
+-   **Dropbox Hosting:**
+    -   These images are hosted on my alt Dropbox. Feel free to [download them](https://www.dropbox.com/scl/fo/06wllibwtl6o4jjkr1nc4/ABZdh6910cTo9DIKLZfQUoI?rlkey=qutffpw7s1gqhcse58ilwdr31&st=yjguos3f&dl=0) to host them yourself
+    -   They're from Google Fonts. Google doesn't require attribution, so I felt like it was a nice option
+    -   I have no plans to delete this Dropbox. It's for my fandom art and work skin assets but if I do, the image won't be found
 
 ---
 
@@ -190,7 +192,7 @@ Here's a breakdown of individual elements within a comment and what you can chan
     -   If you toggle to preview and then return to your html or come back and edit a posted chapter, you might find AO3 changed some things. They parse your html and then add or change it for a few reasons
 -   **Accessibility:**
     -   Remember to update the `alt` attribute on `<img>` tags for screen readers!
-    -   `aria-hidden="true"` is used on some elements (like the like SVG and the "Reply" text) to prevent screen readers from reading out redundant information.
+    -   `aria-hidden="true"` is used on some elements (like the like like button and the "Reply" text) to prevent screen readers from reading out redundant information.
 
 ---
 
