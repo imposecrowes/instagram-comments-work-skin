@@ -48,6 +48,8 @@ This is a rundown of the HTML structure, in case you're lost in div soup
         -   This is the start of a single comment and it's replies. Put all single comments inside the div with id="instCommentContainer"
             -   div class="instSingleComment"
             -   This div contains the picture, comment, comment info, and like button
+              
+<img width="951" alt="image" src="https://github.com/user-attachments/assets/e9a44ff3-ca2a-4131-8f19-8412e2ddfbe5" />
 
 ## A guide, in case you get lost in div soup
 
