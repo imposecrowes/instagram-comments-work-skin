@@ -2,7 +2,7 @@
 
 Adds Instagram comments to your fic
 
-<img width="395" alt="image" src="https://github.com/user-attachments/assets/8a4307ca-67ad-4ce8-8b7b-4f29b3e96870" />
+<img width="356" alt="image" src="https://github.com/user-attachments/assets/953e2cc7-ffe8-4c43-a0e0-8d3899fb1056" />
 
 ## Structure of this repo
 
@@ -13,6 +13,7 @@ I wanted this to be super user friendly, but also match Instagram as much as pos
 -   `singleComment.html` - This is a template of a single comment
 -   `commentAndReples.html` - This is a tempalte of a comment with replies
 -   `singleReply.html` - This is a templatae of a single reply
+-    `likeButtons.html` - Just the like buttons for you to copy/paste
 
 ## Accessibility
 
@@ -47,6 +48,8 @@ This is a rundown of the HTML structure, in case you're lost in div soup
         -   This is the start of a single comment and it's replies. Put all single comments inside the div with id="instCommentContainer"
             -   div class="instSingleComment"
             -   This div contains the picture, comment, comment info, and like button
+              
+<img width="951" alt="image" src="https://github.com/user-attachments/assets/e9a44ff3-ca2a-4131-8f19-8412e2ddfbe5" />
 
 ## A guide, in case you get lost in div soup
 
