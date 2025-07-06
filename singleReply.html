@@ -1,68 +1,60 @@
 <!-- This is a single reply.
 You can paste it as many times as you want inside the very bottom of the div with class instSingleCommentWrapper, after the div with classes instCommentReplyToggle & instCommentReplyText
 It's a template, so you can ctrl+f for _ to find all the places to replace -->
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <!-- IMPORTANT: You must wrap everything with instCommentContainer - it sets font and some other important things! -->
-        <div id="instCommentContainer">
-            <!-- BEGIN SINGLE REPLY -->
-            <div class="instSingleCommentWrapper instCommentReply">
-                <div class="instSingleComment">
-                    <!-- 
+<!-- Start of reply -->
+<!-- IMPORTANT: You must wrap everything with instCommentContainer - it sets font and some other important things! -->
+<div class="instCommentContainer">
+    <!-- BEGIN SINGLE REPLY -->
+    <div class="instSingleCommentWrapper instCommentReply">
+        <div class="instSingleComment">
+            <!-- 
                 Replace "src" with you image link.
                 Replace "alt" with "character name's profile picture" (ex. Crowley's profile picture) for screen readers :D
                 Instagram would actually have "serpent666's profile picture as the alt"
                 idk if that's confusing for readers to have to keep track of who the usernames belong too unless they're not supposed to know yet
             -->
-                    <img
-                        class="instCommentAvatar"
-                        src="PROFILE_PICTURE_URL"
-                        alt="CHARACTER_NAME's profile picture"
-                        height="30"
-                        width="30"
-                    />
-                    <div class="instCommentContent">
-                        <div class="instCommentMeta">
-                            <p>
-                                <!-- Replace with username -->
-                                <span class="instCommentUser">CHARACTER_USERNAME</span>
-                                <!-- Don't remove this -  -->
-                                <span>&nbsp;</span>
-                                <!-- Days since comment. You can update this (ex. 3d, 1d, 12hr) -->
-                                <span class="instCommentDetails"
-                                    >NUMBER_OF_DAYS_SINCEd</span
-                                >
-                            </p>
-                        </div>
-                        <!-- The comment itself. You can update text -->
-                        <!-- Note the space between the instCommentMention and the text after it! -->
-                        <p>
-                            <span class="instCommentMention">@REPLY_NAME</span> REPLY_TEXT
-                        </p>
-                        <!-- The reply button. Don't change -->
-                        <p class="instCommentReplyText" aria-hidden="true">Reply</p>
-                    </div>
-                    <!-- 
+            <img
+                class="instCommentAvatar"
+                src="PROFILE_PICTURE_URL"
+                alt="CHARACTER_NAME's profile picture"
+                height="30"
+                width="30"
+            />
+            <div class="instCommentContent">
+                <div class="instCommentMeta">
+                    <p>
+                        <!-- Replace with username -->
+                        <span class="instCommentUser">CHARACTER_USERNAME</span>
+                        <!-- Don't remove this -  -->
+                        <span>&nbsp;</span>
+                        <!-- Days since comment. You can update this (ex. 3d, 1d, 12hr) -->
+                        <span class="instCommentDetails">NUMBER_OF_DAYS_SINCEd</span>
+                    </p>
+                </div>
+                <!-- The comment itself. You can update text -->
+                <!-- Note the space between the instCommentMention and the text after it! -->
+                <p>
+                    <span class="instCommentMention">@REPLY_NAME</span>
+                    REPLY_TEXT
+                </p>
+                <!-- The reply button. Don't change -->
+                <p class="instCommentReplyText" aria-hidden="true">Reply</p>
+            </div>
+            <!-- 
                 The like button. This one is unfilled
                 Copy/paste the whole thing to replace
             -->
-                    <img
-                        class="instCommentLike"
-                        width="16"
-                        height="16"
-                        aria-hidden="true"
-                        src="https://www.dropbox.com/scl/fi/tozduygkxt2enqi6s0cvp/unfilled_inst_like_button.png?rlkey=mlvlkjtl0vonudnzr9b7841tg&st=coixhf35&raw=1"
-                        alt="Unfilled Heart Icon"
-                        width="16"
-                        height="16"
-                    />
-                </div>
-            </div>
-            <!-- END SINGLE REPLY -->
+            <img
+                class="instCommentLike"
+                width="16"
+                height="16"
+                aria-hidden="true"
+                src="https://www.dropbox.com/scl/fi/tozduygkxt2enqi6s0cvp/unfilled_inst_like_button.png?rlkey=mlvlkjtl0vonudnzr9b7841tg&st=coixhf35&raw=1"
+                alt="Unfilled Heart Icon"
+                width="16"
+                height="16"
+            />
         </div>
-    </body>
-</html>
+    </div>
+    <!-- END SINGLE REPLY -->
+</div>
